@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct HistoryTabView: View {
+struct ForecastTabView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 20) {
@@ -29,8 +29,8 @@ struct HistoryTabView: View {
     }
 }
 
-struct HistoryTabView_Previews: PreviewProvider {
+struct ForecastTabView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryTabView()
+        ForecastTabView()
     }
 }

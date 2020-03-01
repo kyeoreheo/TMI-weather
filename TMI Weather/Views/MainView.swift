@@ -79,7 +79,7 @@ struct MainView: View {
                             }).tag("CurrentTab")
                         
 ////
-                            HistoryTabView()
+                            ForecastTabView()
                             .tabItem({
                                 Text("HistoryTab")
                             }).tag("HistoryTab")
