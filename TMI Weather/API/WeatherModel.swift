@@ -12,7 +12,7 @@ import Foundation
 class WeatherModel: ObservableObject {
     let myWeather: WeatherRequest?
 
-    static var fiveDaysWeathers = [ListDetail5]()
+    static var fiveDaysWeathers: [ListDetail5]?
     
     static var currentWeather: CurrentWeatherResponse?
     

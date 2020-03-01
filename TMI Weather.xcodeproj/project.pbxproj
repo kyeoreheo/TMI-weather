@@ -15,6 +15,8 @@
 		314024D3240035600065DE3C /* UselessInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314024D2240035600065DE3C /* UselessInformationView.swift */; };
 		3177C6912408CAC600064CA4 /* CurrentWeatherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3177C6902408CAC600064CA4 /* CurrentWeatherVM.swift */; };
 		3179F02F24017753001CC664 /* UselessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179F02E24017753001CC664 /* UselessInfo.swift */; };
+		318BACEB240C22CC00D4116A /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318BACEA240C22CC00D4116A /* LineChart.swift */; };
+		318BACED240C474800D4116A /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318BACEC240C474800D4116A /* extensions.swift */; };
 		31CEBE1C23FF636C0039C9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEBE1B23FF636C0039C9D5 /* AppDelegate.swift */; };
 		31CEBE1E23FF636C0039C9D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEBE1D23FF636C0039C9D5 /* SceneDelegate.swift */; };
 		31CEBE2023FF636C0039C9D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CEBE1F23FF636C0039C9D5 /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 		314024D2240035600065DE3C /* UselessInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessInformationView.swift; sourceTree = "<group>"; };
 		3177C6902408CAC600064CA4 /* CurrentWeatherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherVM.swift; sourceTree = "<group>"; };
 		3179F02E24017753001CC664 /* UselessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UselessInfo.swift; sourceTree = "<group>"; };
+		318BACEA240C22CC00D4116A /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		318BACEC240C474800D4116A /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		31CEBE1823FF636C0039C9D5 /* TMI Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMI Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31CEBE1B23FF636C0039C9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31CEBE1D23FF636C0039C9D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				3129926D23FF9C900098534D /* CustomColors.swift */,
 				3179F02E24017753001CC664 /* UselessInfo.swift */,
+				318BACEC240C474800D4116A /* extensions.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			children = (
 				31CEBE3823FF68DF0039C9D5 /* ForecastTabView.swift */,
 				314024D02400318A0065DE3C /* WeatherCell.swift */,
+				318BACEA240C22CC00D4116A /* LineChart.swift */,
 			);
 			path = ForecastTab;
 			sourceTree = "<group>";
@@ -254,6 +260,7 @@
 				31CEBE3723FF68D60039C9D5 /* CurrentTabView.swift in Sources */,
 				310A3008240B12FC009D4B92 /* ChartCir.swift in Sources */,
 				31CEBE3423FF64D10039C9D5 /* WeatherModel.swift in Sources */,
+				318BACEB240C22CC00D4116A /* LineChart.swift in Sources */,
 				3129926E23FF9C900098534D /* CustomColors.swift in Sources */,
 				31CEBE1C23FF636C0039C9D5 /* AppDelegate.swift in Sources */,
 				31CEBE3923FF68DF0039C9D5 /* ForecastTabView.swift in Sources */,
@@ -261,6 +268,7 @@
 				314024D3240035600065DE3C /* UselessInformationView.swift in Sources */,
 				310A3002240AD556009D4B92 /* CountDownView.swift in Sources */,
 				3179F02F24017753001CC664 /* UselessInfo.swift in Sources */,
+				318BACED240C474800D4116A /* extensions.swift in Sources */,
 				31CEBE1E23FF636C0039C9D5 /* SceneDelegate.swift in Sources */,
 				3177C6912408CAC600064CA4 /* CurrentWeatherVM.swift in Sources */,
 				31CEBE3223FF63BF0039C9D5 /* WeatherRequest.swift in Sources */,

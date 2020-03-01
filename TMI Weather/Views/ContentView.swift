@@ -10,6 +10,8 @@ import Combine
 
 struct ContentView: View {
     let myAPI = WeatherModel(zipCode: "11221", country: "US", type: .current) // load data
+    let myForecastAPI =  WeatherModel(zipCode: "11221", country: "US", type: .fiveDays)
+
     //@ObservedObject
     @State var scale: CGFloat = 1
 
