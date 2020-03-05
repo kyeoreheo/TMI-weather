@@ -9,10 +9,7 @@
 import SwiftUI
 
 struct ForecastTabView: View {
-    //    let city = WeatherModel.currentWeather?.name ?? "N/A"
-    let days: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday", "Sunday"]
     var forecast: [[ListDetail5]] = []
-    //each day 8 time zone.
     
     init() {
         self.generateForcaseData()
@@ -37,18 +34,13 @@ struct ForecastTabView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack(spacing: 20) {
-                ForEach(0..<5) {
-                    //Text("\(self.forecast.count)")
-                    WeatherCell(weatherTimeLine: self.forecast[$0])
-                        .padding(.all, 40.0)
-                    //Text("Item \($0)")
-//                        .foregroundColor(.white)
-//                        .font(.largeTitle)
-//                        .background(Color.red)
-//                    Text("HI")
-                    
-                    
+            ZStack {
+                Color.white.edgesIgnoringSafeArea(.all) //set background
+
+                VStack(spacing: 40) {
+                    ForEach(0..<forecast.count) {
+                        WeatherCell(weatherTimeLine: self.forecast[$0])
+                    }
                 }
             }
         }

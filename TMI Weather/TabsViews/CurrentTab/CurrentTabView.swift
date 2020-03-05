@@ -20,19 +20,23 @@ struct CurrentTabView: View {
     let humidity = WeatherModel.currentWeather?.main.humidity ?? 0
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("City: \(city)")
-            Spacer()
-            HStack {
-                ChartRec(txtDataName: "Max", data: tempMax)
-                ChartRec(txtDataName: "Min", data: tempMin)
-                ChartRec(txtDataName: "Cur", data: tempCur)
-                ChartRec(txtDataName: "Win", data: Double(windDeg))
+        ZStack{
+            Color.white.edgesIgnoringSafeArea(.all) //set background
+
+            VStack(alignment: .leading) {
+                Text("City: \(city)")
                 Spacer()
-                ChartCir(tempCur: tempCur, windSpeed: windSpeed, humidity: humidity)
-            }//HStack for chart
+                HStack {
+                    ChartRec(txtDataName: "Max", data: tempMax)
+                    ChartRec(txtDataName: "Min", data: tempMin)
+                    ChartRec(txtDataName: "Cur", data: tempCur)
+                    ChartRec(txtDataName: "Win", data: Double(windDeg))
+                    Spacer()
+                    ChartCir(tempCur: tempCur, windSpeed: windSpeed, humidity: humidity)
+                }//HStack for chart
+            }
+            .padding([.leading, .bottom, .trailing], 30.0)//VStack for main view.
         }
-        .padding([.leading, .bottom, .trailing], 30.0)//VStack for main view.
     }//body
 }
 

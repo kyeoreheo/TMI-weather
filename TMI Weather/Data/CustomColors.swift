@@ -13,4 +13,5 @@ struct MyColors {
     static let lightGray: Color = Color(red: 169 / 255, green: 169 / 255, blue: 169 / 255)
     static let honey: Color = Color(red: 252 / 255, green: 186 / 255, blue: 3 / 255)
     static let grass: Color = Color(red: 58 / 255, green: 199 / 255, blue: 36 / 255)
+    static let lightlightGray: Color = Color(red: 242 / 255, green: 242 / 255, blue: 242 / 255)
 }
